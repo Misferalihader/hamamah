@@ -1,15 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>حمامة 🕊️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #695EF7;
+      --secondary: #B360F4;
+      --bg-light: #F6F5F1;
+      --bg-accent: #D0EEF9;
+      --text-main: #333;
+      --text-muted: #888;
+      --font-ar: 'Cairo', sans-serif;
+    }
     body {
-      font-family: sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      font-family: var(--font-ar);
+      background-color: var(--bg-light);
+      color: var(--text-main);
       margin: 0;
       padding: 0;
       display: flex;
@@ -17,11 +26,16 @@
       align-items: center;
     }
     header {
-      background-color: #ffffff;
+      background-color: var(--primary);
       width: 100%;
       padding: 2rem;
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      color: white;
+    }
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
     }
     main {
       max-width: 500px;
@@ -49,7 +63,7 @@
       width: 100%;
       margin-top: 1.5rem;
       padding: 1rem;
-      background-color: #0070f3;
+      background-color: var(--secondary);
       color: white;
       font-size: 1rem;
       border: none;
@@ -57,12 +71,12 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #0059c1;
+      background-color: #9f50d6;
     }
     .footer {
       margin-top: 2rem;
-      font-size: 0.85rem;
-      color: #888;
+      font-size: 0.9rem;
+      color: var(--text-muted);
       text-align: center;
       max-width: 500px;
     }
@@ -70,8 +84,8 @@
 </head>
 <body>
   <header>
-    <h1>🕊️ حمامة</h1>
-    <p>أرسل رسالة مجهولة عبر واتساب بسرية تامة</p>
+    <img src="logo.svg" alt="شعار حمامة">
+    <h1>حمامة .. تدل دربها 🕊️</h1>
   </header>
 
   <main>
